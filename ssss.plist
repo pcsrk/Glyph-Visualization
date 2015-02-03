@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New item</key>
+	<string>
+&lt;onlyinclude&gt;{| class=&quot;infobox wikitable float-right&quot; style=&quot;margin-top: 0; width: 250px&quot; summary=&quot;Infobox PKW-Modell&quot;
+!colspan=&quot;2&quot; style=&quot;color:{{{Textfarbe oben|#000000}}}; background:{{{Hintergrund oben|#d0d0ff}}};&quot; | {{{Marke&lt;includeonly&gt;|&lt;/includeonly&gt;}}}
+|-
+|colspan=&quot;2&quot;| {{#if:{{{Bild|}}}
+ | [[Datei:{{{Bild}}}|250px|center|{{{Bild zeigt|}}}]]
+ |{{#ifeq: {{NAMESPACE}} | {{ns:0}} |[[Kategorie:Wikipedia:Bilderwunsch an beliebigem Ort|{{PAGENAME}}]]}} &lt;p style=&quot;font-size:smaller; text-align:center;&quot;&gt;&apos;&apos;Bild nicht vorhanden&apos;&apos;&lt;/p&gt;
+}}{{#if: {{{Bild zeigt|}}} |
+ &lt;p style=&quot;font-size:smaller; text-align:center; font-style:italic;&quot;&gt;{{{Bild zeigt}}}&lt;/p&gt;
+}}
+|-
+!colspan=&quot;2&quot; style=&quot;color:{{{Textfarbe unten|#000000}}}; background:{{{Hintergrund unten|#a7a7ff}}};&quot; | {{#if: {{{Modell|&lt;noinclude&gt;-&lt;/noinclude&gt;}}} | {{{Modell}}} | {{PAGENAME}} }}
+|-
+{{#if:{{{Bezeichnung|}}}|
+{{!}}Verkaufsbezeichnung:
+{{!}}&apos;&apos;{{{Bezeichnung|}}}&apos;&apos;}}
+|-
+|Produktionszeitraum:
+| {{#if: {{{bis&lt;includeonly&gt;|&lt;/includeonly&gt;}}}
+ | {{#ifeq: {{{von|}}} | {{{bis}}}
+  | {{{bis|}}}
+  | {{#if: {{{von&lt;includeonly&gt;|&lt;/includeonly&gt;}}}
+   | {{{von}}}–
+  }}{{{bis}}}
+ }}
+ | {{#if: {{{ab|}}}
+  | ab {{{von}}}
+  | {{#ifexpr: {{{von}}} &gt; {{LOCALYEAR}}
+   | ab {{{von}}}
+   | seit {{{von}}}
+  }}
+ }}
+}}
+|-
+|[[Fahrzeugklasse|Klasse]]:
+|{{{Klasse&lt;includeonly&gt;|&lt;/includeonly&gt;}}}{{PKW-Fahrzeugklasse|fz-klasse={{{Klasse|}}}|QS={{{QS|}}}}}{{#if:{{{Klasse1|}}}|, {{{Klasse1}}}{{PKW-Fahrzeugklasse|fz-klasse={{{Klasse1}}}}}}}{{#if:{{{Klasse2|}}}|, {{{Klasse2}}}{{PKW-Fahrzeugklasse|fz-klasse={{{Klasse2}}}}}}}
+|-
+{{#if:{{{Rennserie|}}}|
+{{!}} Rennserie
+{{!}} {{{Rennserie}}}}}
+|-
+| [[Karosseriebauform|Karosserieversionen]]:
+| {{{Versionen&lt;includeonly&gt;|&lt;/includeonly&gt;}}}
+|-
+| Motoren:
+| {{{Motoren&lt;includeonly&gt;|&lt;/includeonly&gt;}}}
+|-
+| Länge:
+| {{#if:{{{Länge|&lt;noinclude&gt;-&lt;/noinclude&gt;}}}|{{{Länge}}}&amp;nbsp;mm}}
+|-
+| Breite:
+| {{#if:{{{Breite|&lt;noinclude&gt;-&lt;/noinclude&gt;}}}|{{{Breite}}}&amp;nbsp;mm}}
+|-
+| Höhe:
+| {{#if:{{{Höhe|&lt;noinclude&gt;-&lt;/noinclude&gt;}}}|{{{Höhe}}}&amp;nbsp;mm}}
+|-
+| [[Radstand]]:
+| {{#if:{{{Radstand|&lt;noinclude&gt;-&lt;/noinclude&gt;}}}|{{{Radstand}}}&amp;nbsp;mm}}
+|-
+| [[Leergewicht]]:
+| {{#if:{{{Gewicht|&lt;noinclude&gt;-&lt;/noinclude&gt;}}}|{{{Gewicht}}}&amp;nbsp;kg}}
+|-
+| Vorgängermodell:
+| {{#if:{{{Vorgänger|}}}|{{{Vorgänger}}}|keines}}
+|-
+| Nachfolgemodell:
+| {{#if:{{{Nachfolger|}}}|{{{Nachfolger}}}|keines}}
+|}{{#if: {{NAMENSRAUM}} | |
+ {{#switch: {{{Klasse|}}}
+  | [[Rennwagen]]
+  | Rennwagen = 
+  | #default = [[Kategorie:Pkw-Modell]]
+ }}
+ {{#invoke:Vorlage:Infobox PKW-Modell|getCategoryForMarke|{{{Marke|}}}|{{{Modell|}}}}}
+}}&lt;includeonly&gt;&lt;/includeonly&gt;
+&lt;/onlyinclude&gt;
+
+
+
+{{Dokumentation}}
+</string>
+</dict>
+</plist>

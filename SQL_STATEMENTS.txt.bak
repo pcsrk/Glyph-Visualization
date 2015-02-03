@@ -1,0 +1,6 @@
+SELECT * FROM patient WHERE nachname LIKE '%SEELICH%'
+
+
+SELECT * FROM diseases WHERE patinet-id = 261027
+
+

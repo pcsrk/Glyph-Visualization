@@ -9,9 +9,7 @@
 
 #include "G__texture.h"
 #include <QImage>
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <GLUT/glut.h>
+#include "gl.hpp"
 
 static    QHash<QString, GLuint> textureHash;
 

@@ -13,10 +13,7 @@
 #include <QGLContext>
 #include "G__texture.h"
 #include "GVfindings.h"
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <GLUT/glut.h>
-
+#include "gl.hpp"
 
 class GV__simpleObjectFindings 
 {

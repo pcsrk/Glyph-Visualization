@@ -12,9 +12,7 @@
 #include <QMouseEvent>
 
 #include <iostream>
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <GLUT/glut.h>
+#include "gl.hpp"
 
 #define MAINBUTTONNAME 4711
 #define BACKGROUND       99

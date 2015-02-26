@@ -14,9 +14,7 @@
 
 #include <QWidget>
 #include "GVbasicElement.h"
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <GLUT/glut.h>
+#include "gl.hpp"
 
 class GVelementThreeStateDistribution : public GVbasicElement 
 {

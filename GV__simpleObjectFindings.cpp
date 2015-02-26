@@ -8,9 +8,6 @@
  */
 
 #include "GV__simpleObjectFindings.h"
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <GLUT/glut.h>
 
 
 //------------------------------------------------------------------------------------

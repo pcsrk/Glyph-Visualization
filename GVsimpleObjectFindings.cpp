@@ -7,16 +7,15 @@
  *
  */
 
-#include "GVsimpleObjectFindings.h"
 #include <QDebug>
+#include "GVsimpleObjectFindings.h"
+//#include <QDebug>
 
-
-
-
-
+/*
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 #include <GLUT/glut.h>
+*/
 
 GVsimpleObjectFindings::GVsimpleObjectFindings  (  GVsettings *settings, QGLWidget *shareWidget, GVfindings   *findings, QGLContext *cx) : GVbasicElement ()    
 {

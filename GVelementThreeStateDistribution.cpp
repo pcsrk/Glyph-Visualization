@@ -8,9 +8,6 @@
  */
 
 #include "GVelementThreeStateDistribution.h"
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <GLUT/glut.h>
 
 
 GVelementThreeStateDistribution::GVelementThreeStateDistribution  (QGLContext *cx) : GVbasicElement ()    
